@@ -1,0 +1,109 @@
+
+.check {
+    max-width:400px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.check h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #595858;
+    font-size:x-large;
+}
+.check ul{
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+.check li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.check li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #595858;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.check input[type="text"],
+.check input[type="number"],
+.check textarea,
+.check select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.check input[type="text"]:focus,
+.check input[type="number"]:focus,
+.check textarea:focus,
+.check select:focus 
+{
+}
+.check li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #595858;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.check textarea{
+    resize:none;
+}
+input[type="submit"],
+input[type="button"], 
+button {
+    background: #ff3300;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow:0 3px #999;
+    color: white;
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    background: #ef2f00;
+    color:white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px #999;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active{
+    background-color : #ce2900;
+    font-size: 16px;
+    color : white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 #666;
+}
