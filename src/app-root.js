@@ -149,12 +149,12 @@ export default class App extends Component {
         let newProducts = products.map(function(product) {
             for (let key in product) {
                 if (key == item.name && product.id == item.id) {
-                    product[key] = item.value;
+                    product[key] = item.value
                 }
             }
-            return product;
+            return product
         })
-        this.setState(newProducts);
+        this.setState(newProducts)
     }
 
     //onChange for vendor table, updates values changed and sets new state
@@ -171,14 +171,15 @@ export default class App extends Component {
                 if (key == input.name && vendor.id == input.id) {
                     for (let keyb in products){
                         if (products[keyb].vendor == vendor[key]) {
-                            products[keyb].vendor = input.value;
+                            products[keyb].vendor = input.value
                         }
                     }
-                    vendor[key] = input.value;
+                    vendor[key] = input.value
                 }
             }
             return vendor;
         })
+        console.log(newVendors)
         this.setState(newVendors)
         this.setState(products)
     }
@@ -188,7 +189,7 @@ export default class App extends Component {
         let id = (+ new Date() + Math.floor(Math.random() * 999999)).toString(36);
         let vendor = {
             id: id,
-            name:'',
+            vendor:'',
         }
         this.state.vendorList.push(vendor);
         this.setState(this.state.vendorList);
